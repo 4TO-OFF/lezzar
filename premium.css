@@ -3,7 +3,8 @@ body {
   color: #eee;
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  padding: 160px 20px 20px; 
+  padding: 160px 20px 20px;
+  padding-top: 10px; /* Tu peux garder celui-ci si tu veux */
 }
 
 .premium-section {
@@ -23,8 +24,9 @@ body {
 
 .comparison-table {
   width: 100%;
+  max-width: 1100px; /* plus large sur desktop */
+  margin: 40px auto 50px;
   border-collapse: collapse;
-  margin-bottom: 50px;
   box-shadow: 0 0 15px rgba(123, 73, 170, 0.4);
   border-radius: 15px;
   overflow: hidden;
@@ -43,7 +45,7 @@ body {
 .comparison-table th {
   background-color: #7B49AA;
   color: white;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .comparison-table tbody tr:last-child td {
@@ -52,6 +54,69 @@ body {
 
 .comparison-table tbody tr:nth-child(even) {
   background-color: #3a3a3a;
+}
+
+.comparison-table tbody td:nth-child(3) {
+  background-color: rgba(123, 73, 170, 0.15);
+  color: white;
+  font-weight: 900;
+  border-left: 5px solid white;
+  border-right: 5px solid white;
+}
+
+.comparison-table thead th:nth-child(3) {
+  border-left: 5px solid white;
+  border-right: 5px solid white;
+  border-top: 5px solid white;
+  background-color: #7B49AA;
+  color: white;
+  font-weight: 900;
+}
+
+.comparison-table tbody tr:last-child td:nth-child(3) {
+  border-bottom: 5px solid white;
+}
+
+.pricing-table {
+  width: 100%;
+  max-width: 900px; /* un peu plus étroit que comparison */
+  margin: 0 auto 60px;
+  border-collapse: collapse;
+  background-color: #2a2a2a;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(123, 73, 170, 0.4);
+  overflow: hidden;
+}
+
+.pricing-table th,
+.pricing-table td {
+  padding: 15px 25px;
+  text-align: center;
+  border-bottom: 1px solid #444;
+  font-size: 1.05rem;
+  color: #ddd;
+}
+
+.pricing-table th {
+  background-color: #7B49AA;
+  color: white;
+  font-weight: 900;
+}
+
+.pricing-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.pricing-table tbody tr:hover {
+  background-color: #5c2d8e66;
+  cursor: default;
+}
+
+.pricing-table td small {
+  display: block;
+  font-size: 0.8rem;
+  color: #bca9d6;
+  margin-top: 3px;
 }
 
 .check {
@@ -103,56 +168,8 @@ body {
   border-color: #7B49AA;
 }
 
-.pricing-table {
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto 60px;
-  border-collapse: collapse;
-  background-color: #2a2a2a;
-  border-radius: 15px;
-  box-shadow: 0 0 15px rgba(123, 73, 170, 0.4);
-  overflow: hidden;
-}
-
-.pricing-table th,
-.pricing-table td {
-  padding: 15px 25px;
-  text-align: center;
-  border-bottom: 1px solid #444;
-  font-size: 1.05rem;
-  color: #ddd;
-}
-
-.pricing-table th {
-  background-color: #7B49AA;
-  color: white;
-  font-weight: 900;
-}
-
-.pricing-table tbody tr:last-child td {
-  border-bottom: none;
-}
-
-.pricing-table tbody tr:hover {
-  background-color: #5c2d8e66;
-  cursor: default;
-}
-
-.pricing-table td small {
-  display: block;
-  font-size: 0.8rem;
-  color: #bca9d6;
-  margin-top: 3px;
-}
-
-@media screen and (max-width: 900px) {
-  .premium-section {
-    margin: 20px 15px 50px;
-  }
-}
-
 .glass-nav {
-  position: related;
+  position: fixed;
   top: 20px;
   left: 10px;
   right: 10px;
@@ -192,6 +209,12 @@ body {
   color: #7B49AA;
 }
 
+@media screen and (max-width: 900px) {
+  .premium-section {
+    margin: 20px 15px 50px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .glass-nav {
     flex-direction: column;
@@ -209,54 +232,12 @@ body {
   }
 }
 
-body {
-  padding-top: 10px;
-}
-
-.comparison-table tbody td:nth-child(3) {
-  background-color: rgba(123, 73, 170, 0.15);
-  color: white;
-  font-weight: 900;
-  border-left: 5px solid white;
-  border-right: 5px solid white;
-}
-
-.comparison-table thead th:nth-child(3) {
-  border-left: 5px solid white;
-  border-right: 5px solid white;
-  border-top: 5px solid white;
-  background-color: #7B49AA; 
-  color: white;
-  font-weight: 900;
-}
-
-.comparison-table tbody tr:last-child td:nth-child(3) {
-  border-bottom: 5px solid white;
-}
-
 @media screen and (max-width: 600px) {
   .comparison-table,
   .pricing-table {
     font-size: 13px;
-  }
-
-  .comparison-table th,
-  .comparison-table td,
-  .pricing-table th,
-  .pricing-table td {
-    padding: 10px 12px;
-  }
-
-  .premium-section h2 {
-    font-size: 1.8rem;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .comparison-table,
-  .pricing-table {
-    font-size: 13px;
-    width: 90%;
+    width: 95%;
+    max-width: none;
     margin: 40px auto;
     position: relative;
     display: block;
