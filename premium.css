@@ -105,7 +105,7 @@ body {
 
 .pricing-table {
   width: 100%;
-  max-width: 700px;
+  max-width: 1100px;
   margin: 0 auto 60px;
   border-collapse: collapse;
   background-color: #2a2a2a;
@@ -126,7 +126,7 @@ body {
 .pricing-table th {
   background-color: #7B49AA;
   color: white;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .pricing-table tbody tr:last-child td {
@@ -216,7 +216,7 @@ body {
 .comparison-table tbody td:nth-child(3) {
   background-color: rgba(123, 73, 170, 0.15);
   color: white;
-  font-weight: 600;
+  font-weight: 900;
   border-left: 5px solid white;
   border-right: 5px solid white;
 }
@@ -227,7 +227,7 @@ body {
   border-top: 5px solid white;
   background-color: #7B49AA; 
   color: white;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .comparison-table tbody tr:last-child td:nth-child(3) {
