@@ -117,7 +117,6 @@ input.addEventListener("keydown", function (e) {
         appendLine(`Commande inconnue : <code>${cmd}</code>`);
       }
     } else if (cmd === "") {
-      // rien
     } else {
       appendLine(`Commande inconnue : <code>${cmd}</code>`);
     }
