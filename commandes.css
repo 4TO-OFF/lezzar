@@ -141,7 +141,7 @@ input {
 
 @media screen and (max-width: 600px) {
   .terminal-window {
-    margin-top: 60px;
+    margin-top: 10px;
     transform: translateY(30px); 
   }
 
@@ -156,6 +156,6 @@ input {
 
 @media screen and (max-width: 600px) {
   body {
-    padding-top: 240px; 
+    padding-top: 200px; 
   }
 }
