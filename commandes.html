@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Commandes</title>
+  <link rel="icon" href="images/logo.png" />
+  <link rel="stylesheet" href="commandes.css" />
+</head>
+<body>
+  <header>
+    <nav class="glass-nav fade-in">
+      <img src="images/logo.png" alt="Logo Lezzar" class="logo" />
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="commandes.html" class="active">Commandes</a></li>
+        <li><a href="premium.html">Premium</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="terminal-window">
+    <div class="terminal-header">
+      <span class="dot red"></span>
+      <span class="dot yellow"></span>
+      <span class="dot green"></span>
+      <span class="terminal-title">Lezzar / Terminal</span>
+    </div>
+    <div class="terminal-body" id="terminal">
+      <div class="line">Tapez <code>/aide</code> pour commencer.</div>
+    </div>
+    <div class="terminal-input">
+      <span class="prompt">lezzar $</span>
+      <input type="text" id="input" autocomplete="off" autofocus />
+    </div>
+  </div>
+
+  <script src="commandes.js"></script>
+</body>
+</html>

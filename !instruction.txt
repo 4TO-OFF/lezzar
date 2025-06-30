@@ -1,0 +1,11 @@
+Instructions pour la Création du Site Web
+Voici les spécifications clés pour le site de notre bot Discord :
+En-tête et Menu de Navigation
+Le menu doit rester fixé en haut de la page, visible en permanence. Il sera un rectangle arrondi (bordures bien rondes), légèrement décollé des bords de la fenêtre. Pour un look moderne, il doit avoir un effet de transparence avec un léger flou d'arrière-plan ("verre dépoli").
+Section "Draftbot" (Accueil)
+Juste sous le menu, la page d'accueil présentera notre bot. Il y aura un grand titre suivi d'une description des fonctionnalités. Nous montrerons le bot en action avec des images Discord pertinentes.
+Page Premium et Boutique
+Quand on clique sur "Premium" dans le menu, on arrive sur une nouvelle page. Elle affichera les différentes offres premium : leur nom, durée et avantages. En bas, un tableau comparera les fonctionnalités du bot classique avec celles du premium, utilisant des icônes pour faciliter la lecture.
+N'hésite pas si tu as des questions !
+
+https://thirsty-beaver.193-38-250-100.plesk.page/

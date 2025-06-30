@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lezzar - Accueil</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/logo.png" />
+  <style>html { scroll-behavior: smooth; }</style>
+</head>
+<body>
+  <header>
+    <nav class="glass-nav fade-in">
+      <img src="images/logo.png" alt="Logo Lezzar" class="logo" />
+      <ul>
+        <li><a href="index.html" class="active">Accueil</a></li>
+        <li><a href="commandes.html">Commandes</a></li>
+        <li><a href="premium.html">Premium</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="hero fade-in">
+    <h1>Lezzar</h1>
+    <p class="subtitle">Le bot rapide pour upgrade ton serveur.</p>
+    <p class="typed-text" id="typed"></p>
+
+    <section class="comparaison fade-in">
+      <h2>Lezzar vs Disboard</h2>
+      <div class="table">
+        <div class="row head">
+          <div>Fonction</div>
+          <div>Disboard</div>
+          <div>Lezzar</div>
+        </div>
+        <div class="row">
+          <div>Cooldown Bump</div>
+          <div>2h</div>
+          <div>1h</div>
+        </div>
+        <div class="row">
+          <div>Interface</div>
+          <div>Basique</div>
+          <div>Moderne</div>
+        </div>
+        <div class="row">
+          <div>Personnalisation</div>
+          <div>❌</div>
+          <div>✅</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="apercus fade-in">
+      <video src="images/bump.mp4" autoplay loop muted playsinline class="video-bump"></video>
+      <img src="images/bot.png" alt="Bot Lezzar dans Discord" />
+    </section>
+
+    <div class="cta fade-in">
+      <a href="https://discord.com/oauth2/authorize?client_id=1372573820925509652&permissions=8&scope=bot" class="btn violet" target="_blank">Ajouter Lezzar</a>
+      <a href="https://discord.com/invite/5XghBdhxgE" class="btn light" target="_blank">Rejoindre le support</a>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
