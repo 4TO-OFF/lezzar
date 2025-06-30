@@ -3,7 +3,7 @@ body {
   color: #eee;
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 160px 20px 20px; 
 }
 
 .premium-section {
@@ -152,17 +152,16 @@ body {
 }
 
 .glass-nav {
-  position: fixed;
+  position: related;
   top: 20px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  width: 95%;
-  max-width: 800px;
+  left: 10px;
+  right: 10px;
+  margin: 20px auto;
+  max-width: 760px;
   background: rgba(79, 11, 114, 0.2);
   backdrop-filter: blur(10px);
   border-radius: 25px;
-  padding: 12px 30px;
+  padding: 8px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -185,7 +184,7 @@ body {
   text-decoration: none;
   font-weight: 600;
   font-size: 1rem;
-  transition: 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .glass-nav a:hover,
@@ -197,8 +196,10 @@ body {
   .glass-nav {
     flex-direction: column;
     top: 0;
-    padding: 20px 10px;
-    border-radius: 0 0 25px 25px;
+    padding: 15px 25px;
+    max-width: 90%;
+    margin: 10px auto;
+    border-radius: 25px 25px 25px 25px;
   }
 
   .glass-nav ul {
@@ -209,7 +210,7 @@ body {
 }
 
 body {
-  padding-top: 120px;
+  padding-top: 10px;
 }
 
 .comparison-table tbody td:nth-child(3) {
@@ -252,7 +253,8 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .comparison-table, .pricing-table {
+  .comparison-table, 
+  .pricing-table {
     width: 90% !important; 
     margin: 40px auto !important; 
     position: relative;
