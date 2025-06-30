@@ -253,11 +253,24 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .comparison-table, 
+  .comparison-table,
   .pricing-table {
-    width: 90% !important; 
-    margin: 40px auto !important; 
+    font-size: 13px;
+    width: 90%;
+    margin: 40px auto;
     position: relative;
-    top: 30px; 
+    display: block;
+    top: 30px;
+  }
+
+  .comparison-table th,
+  .comparison-table td,
+  .pricing-table th,
+  .pricing-table td {
+    padding: 10px 12px;
+  }
+
+  .premium-section h2 {
+    font-size: 1.8rem;
   }
 }
